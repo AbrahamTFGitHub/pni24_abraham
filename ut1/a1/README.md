@@ -79,3 +79,5 @@ Internet: es la red de ámbito mundial.
 14. En la transmisión full-duplex, la capacidad del canal es siempre compartida por los dos dispositivos que se comunican.
 15. Una rotura de cable en una topología en bus detiene toda la transmisión.
 16. Una red que contiene múltiples concentradores esta configurada muy probablemente como una topología en árbol.
+17. Defina el tipo de topología de las siguientes figuras:
+![image](https://user-images.githubusercontent.com/90834831/138235872-453f2277-8229-47db-a478-a5610f7612d7.png)
