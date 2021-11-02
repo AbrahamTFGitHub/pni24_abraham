@@ -1,12 +1,12 @@
 1. Convierte las siguientes direcciones a binario e indica si se trata de direcciones de tipo A, B o C. 
 
-    + `10.0.3.2`
-    + `128.45.7.1` 
-    + `192.200.5.4` 
-    + `51.23.32.50` 
-    + `47.50.3.2`  
-    + `100.90.80.70` 
-    + `124.45.6.1` 
+    + `10.0.3.2` 00001010.00000000.00000011.00000010 Clase A
+    + `128.45.7.1` 10000000.00101101.00000111.00000001 Clase B
+    + `192.200.5.4` 11000000.11001000.00000101.00000100 Clase C
+    + `51.23.32.50` 00110011.00010111.00100000.00110010 Clase A
+    + `47.50.3.2`  00101111.00110010.00000011.00000010 Clase A
+    + `100.90.80.70` 01100100.01011010.01010000.01000110 Clase A
+    + `124.45.6.1` 01111100.00101101.00000110.00000001 Clase A
 
 2. Dada la dirección de red `192.168.30.0`, indica qué máscara de subred deberías escoger para tener 4 subredes. Rellena a continuación la siguiente tabla. 
 
@@ -68,13 +68,13 @@
 |-----------------------|-----------------|------------------|-------------------|-------------------------------|-------------------------------|
 | 216.14.55.137         |                 |                  |                   |                               |                               |
 | 123.1.1.15            |                 |                  |                   |                               |                               |
-| 123.1.1.15            |                 |                  |                   |                               |                               |
-| 123.1.1.15            |                 |                  |                   |                               |                               |
-| 123.1.1.15            |                 |                  |                   |                               |                               |
+| 150.127.221.224       |                 |                  |                   |                               |                               |
+| 194.125.35.199        |                 |                  |                   |                               |                               |
+| 175.12.239.244        |                 |                  |                   |                               |                               |
 
 </center>
 
-7. Dada una dirección `142.226.0.15` :
+Dada una dirección `142.226.0.15` :
 
     + ¿Cuál es el equivalente binario del segundo octeto?
     + ¿Cuál es la Clase de la dirección?
@@ -86,7 +86,7 @@
     + ¿Cuántos octetos hay en una dirección `ip`?
     + ¿Cuántos bits puede haber por octeto?
 
-8. Determinar, para las siguientes direcciones de host `ip`, cuáles son las direcciones que son válidas para redes comerciales. Válida significa que se puede asignar a una estación de trabajo, servidor, impresora, interfaz de router, etc.
+7. Determinar, para las siguientes direcciones de host `ip`, cuáles son las direcciones que son válidas para redes comerciales. Válida significa que se puede asignar a una estación de trabajo, servidor, impresora, interfaz de router, etc.
 
 <center>
 
@@ -102,7 +102,7 @@
 </center>
 
 
-9. Completa la siguiente tabla:
+8. Completa la siguiente tabla:
 
 <center>
 
@@ -118,7 +118,7 @@
 
 </center>
 
-10. Asignar direcciones `ip` válidas a las interfaces de red (interfaz de red = tarjeta de red) que les falte para conseguir que exista comunicación entre los host A, B, C, D, E y F. La máscara en todos los casos será `255.255.224.0`. Justifica la respuesta.
+9. Asignar direcciones `ip` válidas a las interfaces de red (interfaz de red = tarjeta de red) que les falte para conseguir que exista comunicación entre los host A, B, C, D, E y F. La máscara en todos los casos será `255.255.224.0`. Justifica la respuesta.
 
 <center>
 
@@ -126,13 +126,13 @@
 
 </center>
 
-11. Tu empresa tiene una dirección de red de Clase C de `200.10.57.0` .Desea subdividir la red física en 3 subredes.
+10. Tu empresa tiene una dirección de red de Clase C de `200.10.57.0` .Desea subdividir la red física en 3 subredes.
 
     + Indica una máscara que permita dividir la red de clase C (al menos) en tres subredes.
     + ¿Cuántos hosts (ordenadores) puede haber por subred?
     + ¿Cuál es la dirección de red y la dirección de broadcast de cada una de las 3 subredes creadas?
 
-12. Se desea subdividir la dirección de red de clase C de `200.10.57.0` en 4 subredes. Responde a las siguientes preguntas:
+11. Se desea subdividir la dirección de red de clase C de `200.10.57.0` en 4 subredes. Responde a las siguientes preguntas:
 
     + ¿Cuál es el equivalente en números binarios de la dirección de red de clase C `200.10.57.0` de este ejercicio?
     + ¿Cuál(es) es (son) el (los) octeto(s) que representa(n) la porción de red y cuál(es) es (son) el (los) octeto(s) que representa(n) la porción de host de esta dirección de red de clase C?
@@ -140,7 +140,7 @@
     + ¿Cuál será la máscara de subred (utilizando la notación decimal) basándose en la cantidad de bits que se pidieron prestados en el paso 3?
     + ¿Cuál es el equivalente en números binarios de la máscara de subred a la que se hace referencia anteriormente?
 
-13. Teniendo en cuenta la dirección `ip` del ejercicio anterior (`200.10.57.0`) completa la siguiente tabla para cada una de las posibles subredes que se pueden crear pidiendo prestados 3 bits para subredes al cuarto octeto (octeto de host). Identifica la dirección de red, la máscara de subred, el intervalo de direcciones `ip` de host posibles para cada subred, la dirección de broadcast para cada subred.
+12. Teniendo en cuenta la dirección `ip` del ejercicio anterior (`200.10.57.0`) completa la siguiente tabla para cada una de las posibles subredes que se pueden crear pidiendo prestados 3 bits para subredes al cuarto octeto (octeto de host). Identifica la dirección de red, la máscara de subred, el intervalo de direcciones `ip` de host posibles para cada subred, la dirección de broadcast para cada subred.
 
 <center>
 
@@ -159,7 +159,7 @@
 </center>
 
 
-14. Completa la siguiente tabla:
+13. Completa la siguiente tabla:
 
 <center>
 
@@ -175,14 +175,14 @@
 
 </center>
 
-15. Responde a las siguientes preguntas:
+14. Responde a las siguientes preguntas:
 
     + Si tenemos una red `147.84.32.0` con máscara de red `255.255.255.252`, indica la dirección de broadcast, la de red y la de los posibles nodos de la red.
     + La red `192.168.0.0`, ¿de qué clase es?
     + Escribe el rango de direcciones `ip` que pertenecen a la subred definida por la dirección `140.220.15.245` con máscara `255.255.255.240`.
     + Una red de clase B en Internet tiene una máscara de subred igual a `255.255.240.0`. ¿Cuál es el máximo de nodos por subred?
 
-16. Calcular la dirección de red y la dirección de broadcast (difusión) de las máquinas con las siguientes direcciones IP y máscaras de subred (si no se especifica, se utiliza la máscara por defecto).
+15. Calcular la dirección de red y la dirección de broadcast (difusión) de las máquinas con las siguientes direcciones IP y máscaras de subred (si no se especifica, se utiliza la máscara por defecto).
 
     + `18.120.16.250`
     + `18.120.16.255 / 255.255.0.0`
@@ -193,7 +193,7 @@
     + `192.168.20.25 / 255.255.255.240` 
     + `192.168.20.25 / 255.255.255.192`
 
-17. Responde a las siguientes preguntas:
+16. Responde a las siguientes preguntas:
 
     + ¿Cuántos ordenadores como máximo se pueden tener en una red de clase A?
     + ¿Cuántos ordenadores como máximo se pueden tener en una red de clase B?
@@ -201,13 +201,13 @@
     + En una red de clase C con máscara `255.255.255.128`, ¿cuántos ordenadores se pueden tener en cada subred?
     + En una red de clase C con máscara `255.255.255.192`, ¿cuántos ordenadores se pueden tener en cada subred?
 
-18. Tu empresa tiene una dirección de red de Clase B de `150.10.0.0`. Desea subdividir la red física en 3 subredes.
+17. Tu empresa tiene una dirección de red de Clase B de `150.10.0.0`. Desea subdividir la red física en 3 subredes.
 
     + Indica una máscara que permita dividir la red de clase B (al menos) en tres subredes.
     + ¿Cuántos hosts puede haber por subred?
     + ¿Cuál es la dirección de red y la dirección de broadcast de cada una de las 3 subredes creadas?
 
-19. Dada la dirección de clase B `120.32.0.0`, indica qué máscara de subred deberías escoger para tener 4 subredes. Rellena a continuación la siguiente tabla.
+18. Dada la dirección de clase B `120.32.0.0`, indica qué máscara de subred deberías escoger para tener 4 subredes. Rellena a continuación la siguiente tabla.
 
 <center>
 
@@ -217,6 +217,17 @@
 |               |                     |             |             |
 |               |                     |             |             |
 |               |                     |             |             |
+
+</center>
+19. 
+<center>
+
+| Número de red | Mascara | Subred | Broadcast |
+|---------------|---------|--------|-----------|
+|               |         |        |           |
+|               |         |        |           |
+|               |         |        |           |
+|               |         |        |           |
 
 </center>
 
