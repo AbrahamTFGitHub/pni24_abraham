@@ -9,15 +9,15 @@
     + `124.45.6.1` 01111100.00101101.00000110.00000001 Clase A
 
 2. Dada la dirección de red `192.168.30.0`, indica qué máscara de subred deberías escoger para tener 4 subredes. Rellena a continuación la siguiente tabla. 
-
+ Mascara: 255.255.255.192
 <center>
 
-| Número de red | Dirección de subred | Primer host | Último host |
-|---------------|---------------------|-------------|-------------|
-|               |                     |             |             |
-|               |                     |             |             |
-|               |                     |             |             |
-|               |                     |             |             |
+| Número de red  | Dirección de subred | Primer host   | Último host    |
+|----------------|---------------------|---------------|----------------|
+| 192.168.30.0   |   192.168.30.0      | 192.168.30.1  | 192.168.30.62  |
+| 192.168.30.0   |   192.168.30.64     | 192.168.30.65 | 192.168.30.126 |
+| 192.168.30.0   |   192.168.30.128    | 192.168.30.129| 192.168.30.190 |
+| 192.168.30.0   |   192.168.30.192    | 192.168.30.193| 192.168.30.254 |
 
 
 </center>
@@ -26,11 +26,11 @@
 
 <center>
 
-| Número de red | Dirección de subred | Primer host | Último host |
-|---------------|---------------------|-------------|-------------|
-|               |                     |             |             |
-|               |                     |             |             |
-|               |                     |             |             |
+| Número de red | Dirección de subred | Primer host   | Último host  |
+|---------------|---------------------|---------------|--------------|
+|               | 192.168.55.0        | 192.168.55.1  |192.168.55.30 |
+|               |    192.168.55.32    | 192.168.55.33 |192.168.55.62 |
+|               | 192.168.55.64       | 192.168.55.65 |192.168.55.126|
 |               |                     |             |             |
 |               |                     |             |             |
 |               |                     |             |             |
@@ -56,7 +56,11 @@
 
 
 5. ¿Cuál es el intervalo decimal y binario del primer octeto para todas las direcciones `ip` clase "B" posibles?
-¿Qué octeto u octetos representan la parte que corresponde a la red de una dirección `ip` clase "C"?
+
+
+¿Qué octeto u octetos representan la parte que corresponde a la red de una dirección `ip` clase "C"? 
+   255.255.255|.0
+*Parte de red*|
 ¿Qué octeto u octetos representan la parte que corresponde al host de una dirección `ip` clase "A"?
 
 6. Completa la siguiente tabla:
@@ -66,25 +70,25 @@
 
 | Dirección `ip` del host | Dirección clase | Dirección de red | Dirección de host | Dirección de broadcast de red | Máscara de subred por defecto |
 |-----------------------|-----------------|------------------|-------------------|-------------------------------|-------------------------------|
-| 216.14.55.137         |                 |                  |                   |                               |                               |
+| 216.14.55.137         | Clase C         |   216.14.55.0    |                   |       216.14.55.255           |         255.255.255.0         |
 | 123.1.1.15            |                 |                  |                   |                               |                               |
 | 150.127.221.224       |                 |                  |                   |                               |                               |
-| 194.125.35.199        |                 |                  |                   |                               |                               |
+| 194.125.35.199        |  Clase C        | 194.125.30.0     |                   |        194.125.35.255         |          255.255.255.0        |
 | 175.12.239.244        |                 |                  |                   |                               |                               |
 
 </center>
 
 Dada una dirección `142.226.0.15` :
 
-    + ¿Cuál es el equivalente binario del segundo octeto?
-    + ¿Cuál es la Clase de la dirección?
+    + ¿Cuál es el equivalente binario del segundo octeto? 11100010
+    + ¿Cuál es la Clase de la dirección? Clase B
     + ¿Cuál es la dirección de red de esta dirección `ip`?
     + ¿Es ésta una dirección de host válida? ¿Por qué? o ¿Por qué no?
     + ¿Cuál es la cantidad máxima de hosts que se pueden tener con una dirección de red de clase C? 
     + ¿Cuántas redes de clase B puede haber?
-    + ¿Cuántos hosts puede tener cada red de clase B?
-    + ¿Cuántos octetos hay en una dirección `ip`?
-    + ¿Cuántos bits puede haber por octeto?
+    + ¿Cuántos hosts puede tener cada red de clase B? 65.534 hosts
+    + ¿Cuántos octetos hay en una dirección `ip`? 32 octectos
+    + ¿Cuántos bits puede haber por octeto? 8 bits X Octeto
 
 7. Determinar, para las siguientes direcciones de host `ip`, cuáles son las direcciones que son válidas para redes comerciales. Válida significa que se puede asignar a una estación de trabajo, servidor, impresora, interfaz de router, etc.
 
@@ -164,14 +168,14 @@ Dada una dirección `142.226.0.15` :
 <center>
 
 
-| `ip`          | Máscara         | Subred        | Broadcast     | Número hosts |
-|---------------|-----------------|---------------|---------------|--------------|
-| 192.168.1.130 | 255.255.255.128 | 192.168.1.128 | 192.168.1.255 | 128-2        |
-| 200.1.17.15   | 255.255.255.0   | 200.1.17.0    | 200.1.17.255  |              |
-| 133.32.4.61   | 255.255.255.224 |               |               | 32-2         |
-| 132.4.60.99   | 255.255.0.0     |               |               |              |
-| 222.43.15.41  |                 | 222.43.15.0   | 222.43.15.255 |              |
-|               | 255.255.255.192 | 192.168.0.0   |               |              |
+| `ip`          | Máscara         | Subred        | Broadcast      | Número hosts |
+|---------------|-----------------|---------------|----------------|--------------|
+| 192.168.1.130 | 255.255.255.128 | 192.168.1.128 | 192.168.1.255  | 128-2        |
+| 200.1.17.15   | 255.255.255.0   | 200.1.17.0    | 200.1.17.255   | 254          |
+| 133.32.4.61   | 255.255.255.224 | 133.32.4.32   | 133.32.4.63    | 32-2         |
+| 132.4.60.99   | 255.255.0.0     | 132.40.60.0   | 132.40.255.254 | 65534        |
+| 222.43.15.41  | 255.255.255.0   | 222.43.15.0   | 222.43.15.255  | 254          |
+| 192.168.0.40  | 255.255.255.192 | 192.168.0.0   | 192.168.0.63   | 64-2         |
 
 </center>
 
@@ -195,11 +199,11 @@ Dada una dirección `142.226.0.15` :
 
 16. Responde a las siguientes preguntas:
 
-    + ¿Cuántos ordenadores como máximo se pueden tener en una red de clase A?
-    + ¿Cuántos ordenadores como máximo se pueden tener en una red de clase B?
-    + ¿Cuántos ordenadores como máximo se pueden tener en una red de clase C?
-    + En una red de clase C con máscara `255.255.255.128`, ¿cuántos ordenadores se pueden tener en cada subred?
-    + En una red de clase C con máscara `255.255.255.192`, ¿cuántos ordenadores se pueden tener en cada subred?
+    + ¿Cuántos ordenadores como máximo se pueden tener en una red de clase A? 16.777.214 ordenadores.
+    + ¿Cuántos ordenadores como máximo se pueden tener en una red de clase B? 65.534 ordenadores.
+    + ¿Cuántos ordenadores como máximo se pueden tener en una red de clase C? 254 ordenadores.
+    + En una red de clase C con máscara `255.255.255.128`, ¿cuántos ordenadores se pueden tener en cada subred? 
+    + En una red de clase C con máscara `255.255.255.192`, ¿cuántos ordenadores se pueden tener en cada subred? 62 ordenadores X Subred.
 
 17. Tu empresa tiene una dirección de red de Clase B de `150.10.0.0`. Desea subdividir la red física en 3 subredes.
 
