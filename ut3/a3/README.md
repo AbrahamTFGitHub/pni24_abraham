@@ -112,7 +112,7 @@ Mascara: 255.255.192.0
 <center>
 
 
-|  `ip`         | Máscara | Subred | Broadcast |
+|  `ip`         | Máscara | Subred | Broadcast |      
 |---------------|---------|--------|-----------|
 | 192.168.1.130 |255.255.255.0|192.168.1.0|192.168.1.255|
 | 10.1.1.3      |255.0.0.0|10.0.0.0|10.255.255.255|
@@ -146,20 +146,20 @@ Mascara: 255.255.192.0
     + ¿Cuál es el equivalente en números binarios de la máscara de subred a la que se hace referencia anteriormente?
 
 13. Teniendo en cuenta la dirección `ip` del ejercicio anterior (`200.10.57.0`) completa la siguiente tabla para cada una de las posibles subredes que se pueden crear pidiendo prestados 3 bits para subredes al cuarto octeto (octeto de host). Identifica la dirección de red, la máscara de subred, el intervalo de direcciones `ip` de host posibles para cada subred, la dirección de broadcast para cada subred.
-
+Mascara:255.255.255.224 por cada una 30 hosts por subred.
 <center>
 
 
-|  Subred | Dirección de subred | Primer host      | Último host      |
-|---------|---------------------|------------------|------------------|
-| 1       |                     |                  |                  |
-| 2       |                     |                  |                  |
-| 3       |                     |                  |                  |
-| 4       |                     |                  |                  |
-| 5       |                     |                  |                  |
-| 6       |                     |                  |                  |
-| 7       |                     |                  |                  |
-| 8       |                     |                  |                  |
+|  Subred | Dirección de subred | Primer host      | Último host      | Broadcast|
+|---------|---------------------|------------------|------------------|----------|
+| 1       | 200.10.57.0|  200.10.57.1 |  200.10.57.30   |200.10.57.31 |
+| 2       | 200.10.57.32| 200.10.57.33|  200.10.57.62   |200.10.57.63 |
+| 3       | 200.10.57.64| 200.10.57.65|  200.10.57.94   |200.10.57.95 |
+| 4       | 200.10.57.96| 200.10.57.97|  200.10.57.126  |200.10.57.127|
+| 5       | 200.10.57.128| 200.10.57.129|  200.10.57.158   | 200.10.57.159 |
+| 6       | 200.10.57.160| 200.10.57.161|  200.10.57.190   | 200.10.57.191 |
+| 7       | 200.10.57.192| 200.10.57.193|  200.10.57.222   | 200.10.57.223 |
+| 8       | 200.10.57.224| 200.10.57.225|  200.10.57.254   | 200.10.57.255 |
 
 </center>
 
