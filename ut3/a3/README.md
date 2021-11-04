@@ -133,17 +133,17 @@ Mascara: 255.255.192.0
 
 11. Tu empresa tiene una dirección de red de Clase C de `200.10.57.0` .Desea subdividir la red física en 3 subredes.
 
-    + Indica una máscara que permita dividir la red de clase C (al menos) en tres subredes.
-    + ¿Cuántos hosts (ordenadores) puede haber por subred?
+    + Indica una máscara que permita dividir la red de clase C (al menos) en tres subredes. Mascara: 255.255.255.192
+    + ¿Cuántos hosts (ordenadores) puede haber por subred? 62 hosts X Subred.
     + ¿Cuál es la dirección de red y la dirección de broadcast de cada una de las 3 subredes creadas?
-
+    
 12. Se desea subdividir la dirección de red de clase C de `200.10.57.0` en 4 subredes. Responde a las siguientes preguntas:
 
-    + ¿Cuál es el equivalente en números binarios de la dirección de red de clase C `200.10.57.0` de este ejercicio?
-    + ¿Cuál(es) es (son) el (los) octeto(s) que representa(n) la porción de red y cuál(es) es (son) el (los) octeto(s) que representa(n) la porción de host de esta dirección de red de clase C?
-    + ¿Cuántos bits se deben pedir prestados a la porción de host de la dirección de red para poder suministrar 8 subredes?
-    + ¿Cuál será la máscara de subred (utilizando la notación decimal) basándose en la cantidad de bits que se pidieron prestados en el paso 3?
-    + ¿Cuál es el equivalente en números binarios de la máscara de subred a la que se hace referencia anteriormente?
+    + ¿Cuál es el equivalente en números binarios de la dirección de red de clase C `200.10.57.0` de este ejercicio? 11001000.00001010.00111001.00000000
+    + ¿Cuál(es) es (son) el (los) octeto(s) que representa(n) la porción de red y cuál(es) es (son) el (los) octeto(s) que representa(n) la porción de host de esta dirección de red de clase C? RED.RED.RED.HOST
+    + ¿Cuántos bits se deben pedir prestados a la porción de host de la dirección de red para poder suministrar 8 subredes? 3 bits
+    + ¿Cuál será la máscara de subred (utilizando la notación decimal) basándose en la cantidad de bits que se pidieron prestados en el paso 3? 255.255.255.224
+    + ¿Cuál es el equivalente en números binarios de la máscara de subred a la que se hace referencia anteriormente? 11111111.11111111.11111111.11100000
 
 13. Teniendo en cuenta la dirección `ip` del ejercicio anterior (`200.10.57.0`) completa la siguiente tabla para cada una de las posibles subredes que se pueden crear pidiendo prestados 3 bits para subredes al cuarto octeto (octeto de host). Identifica la dirección de red, la máscara de subred, el intervalo de direcciones `ip` de host posibles para cada subred, la dirección de broadcast para cada subred.
 Mascara:255.255.255.224 por cada una 30 hosts por subred.
