@@ -136,7 +136,15 @@ Mascara: 255.255.192.0
     + Indica una máscara que permita dividir la red de clase C (al menos) en tres subredes. Mascara: 255.255.255.192
     + ¿Cuántos hosts (ordenadores) puede haber por subred? 62 hosts X Subred.
     + ¿Cuál es la dirección de red y la dirección de broadcast de cada una de las 3 subredes creadas?
-    
+
+
+|  Subred | Dirección de subred |Broadcast|
+|---------|---------------------|---------|
+| 1       | 200.10.57.0         |200.10.57.63 |
+| 2       | 200.10.57.64        |200.10.57.127 |
+| 3       | 200.10.57.128       |200.10.57.191 | 
+
+
 12. Se desea subdividir la dirección de red de clase C de `200.10.57.0` en 4 subredes. Responde a las siguientes preguntas:
 
     + ¿Cuál es el equivalente en números binarios de la dirección de red de clase C `200.10.57.0` de este ejercicio? 11001000.00001010.00111001.00000000
@@ -196,9 +204,9 @@ Mascara:255.255.255.224 por cada una 30 hosts por subred.
 | 155.4.220.39  | 155.4.0.0    | 155.4.255.255   | 255.255.0.0 | 
 | 194.209.14.33 | 194.209.14.0 | 194.209.14.255  | 255.255.255.0 | 
 | 190.33.109.133  |190.33.109.0| 190.33.109.255  | 255.255.255.0   | 
-| 190.33.109.133  | ... | ...  | 255.255.255.128 |
-| 192.168.20.25  | ... | ...   | 255.255.255.240 |  
-| 192.168.20.25  | ... | ...   | 255.255.255.192 |  
+| 190.33.109.133  | 190.33.109.128 | 190.33.109.255  | 255.255.255.128 |
+| 192.168.20.25  | 192.168.20.16 | 192.168.20.31   | 255.255.255.240 |  
+| 192.168.20.25  | 192.168.20.0 | 192.168.20.63   | 255.255.255.192 |  
    
    
 17. Responde a las siguientes preguntas:
@@ -206,7 +214,7 @@ Mascara:255.255.255.224 por cada una 30 hosts por subred.
     + ¿Cuántos ordenadores como máximo se pueden tener en una red de clase A? 16.777.214 ordenadores.
     + ¿Cuántos ordenadores como máximo se pueden tener en una red de clase B? 65.534 ordenadores.
     + ¿Cuántos ordenadores como máximo se pueden tener en una red de clase C? 254 ordenadores.
-    + En una red de clase C con máscara `255.255.255.128`, ¿cuántos ordenadores se pueden tener en cada subred? 
+    + En una red de clase C con máscara `255.255.255.128`, ¿cuántos ordenadores se pueden tener en cada subred? 126 ordenadores X Subred.
     + En una red de clase C con máscara `255.255.255.192`, ¿cuántos ordenadores se pueden tener en cada subred? 62 ordenadores X Subred.
 
 18. Tu empresa tiene una dirección de red de Clase B de `150.10.0.0`. Desea subdividir la red física en 3 subredes.
