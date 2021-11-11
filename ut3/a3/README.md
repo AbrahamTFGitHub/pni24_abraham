@@ -190,6 +190,7 @@ Mascara:255.255.255.224 por cada una 30 hosts por subred.
 15. Responde a las siguientes preguntas:
 
     + Si tenemos una red `147.84.32.0` con máscara de red `255.255.255.252`, indica la dirección de broadcast, la de red y la de los posibles nodos de la red.
+     Dirección de Subred: 150.84.32.240 P
     + La red `192.168.0.0`, ¿de qué clase es? Clase C
     + Escribe el rango de direcciones `ip` que pertenecen a la subred definida por la dirección `140.220.15.245` con máscara `255.255.255.240`.
     + Una red de clase B en Internet tiene una máscara de subred igual a `255.255.240.0`. ¿Cuál es el máximo de nodos por subred? Maximo 4094 Nodos X Subred.
@@ -241,7 +242,9 @@ Mascara: 255.255.192.0
 20. Responde a las siguientes preguntas:
 
     + Si tenemos una red `150.84.32.0` con máscara de red `255.255.255.224`, indica la dirección de broadcast, la de red y la de los posibles nodos de la red.
+    Dirección de Subred: 150.84.32.0 Primer host: 150.84.32.1 Último host 150.84.32.30 Broadcast: 150.84.32.31
     + La red `192.168.0.0`, ¿de qué clase es? Clase C
-    + Escribe el rango de direcciones `ip` que pertenecen a la subred definida por la dirección  `150.84.32.245` con máscara `255.255.255.240`.
+    + Escribe el rango de direcciones `ip` que pertenecen a la subred definida por la dirección  `150.84.32.245` con máscara `255.255.255.240`. 
+    Dirección de Subred: 150.84.32.240 Primer host: 150.84.32.241 Último host 150.84.32.254
     + Una red de clase B en Internet tiene una máscara de subred igual a `255.255.240.0`. ¿Cuál es el máximo de nodos por subred? Maximo 4094 Nodos X Subred.
 
