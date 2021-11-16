@@ -114,21 +114,17 @@ Mascara: 255.255.192.0
 | ip           | Máscara         | Subred        | Broadcast     |
 |--------------|-----------------|---------------|---------------|
 | 192.168.1.30 | 255.255.255.128 | 192.168.1.128 | 192.168.1.255 |
-| 10.1.1.3     | 255.255.0.0     |               |               |
-| 10.1.1.8     |                 | 10.1.0.0      | 10.1.255.255  |
-| 220.1.1.23   | 255.0.0.0       |               |               |
-| 172.168.8.48 | 255.255.248.0   |               |               |
-| 172.16.8.48  | 255.255.255.224 |               |               |
+| 10.1.1.3     | 255.255.0.0     |  10.1.0.0     | 10.1.255.255  |
+| 10.1.1.8     |  255.255.0.0    | 10.1.0.0      | 10.1.255.255  |
+| 220.1.1.23   | 255.0.0.0       | 220.0.0.0     |220.255.255.255|
+| 172.168.8.48 | 255.255.248.0   | 172.16.8.0    | 172.16.15.255 |
+| 172.16.8.48  | 255.255.255.224 | 172.16.8.32   | 172.16.8.63     |
 
 </center>
 
-10. Asignar direcciones `ip` válidas a las interfaces de red (interfaz de red = tarjeta de red) que les falte para conseguir que exista comunicación entre los host A, B, C, D, E y F. La máscara en todos los casos será `255.255.224.0`. Justifica la respuesta.
-
-<center>
-
-![](img/001.png)
-
-</center>
+10. Asignar direcciones `ip` válidas a las interfaces de red (interfaz de red = tarjeta de red) que les falte para conseguir que exista comunicación entre los host A, B, C, D, E y F. La máscara en todos los casos será `255.255.224.0`. Justifica la respuesta. A traves del AND de la operación que hecho la dirección con que he me ha dado es 172.16.0.0 con esa mascara. Y la dirección de broadcast la otuve renellando 1 la mascara de subred. Con lo cual la dirección de broadcast es la 172.16.63.255.
+A=172.16.10.1 B=172.16.20.2 C=172.16.30.3 D=172.16.40.4 E=172.16.50.5 F=172.16.60.6
+Todas tienen enlace y sin ningun problema de comunicación.
 
 11. Tu empresa tiene una dirección de red de Clase C de `200.10.57.0` .Desea subdividir la red física en 3 subredes.
 
@@ -190,7 +186,7 @@ Mascara:255.255.255.224 por cada una 30 hosts por subred.
 15. Responde a las siguientes preguntas:
 
     + Si tenemos una red `147.84.32.0` con máscara de red `255.255.255.252`, indica la dirección de broadcast, la de red y la de los posibles nodos de la red.
-     Dirección de Subred: 150.84.32.240 P
+     Dirección de Subred: 147.84.32.0 Posibles nodos: 147.84.32.1,147.84.32.2 Broadcast:147.84.32.3
     + La red `192.168.0.0`, ¿de qué clase es? Clase C
     + Escribe el rango de direcciones `ip` que pertenecen a la subred definida por la dirección `140.220.15.245` con máscara `255.255.255.240`.
     + Una red de clase B en Internet tiene una máscara de subred igual a `255.255.240.0`. ¿Cuál es el máximo de nodos por subred? Maximo 4094 Nodos X Subred.
@@ -219,9 +215,15 @@ Mascara:255.255.255.224 por cada una 30 hosts por subred.
 
 18. Tu empresa tiene una dirección de red de Clase B de `150.10.0.0`. Desea subdividir la red física en 3 subredes.
 
-    + Indica una máscara que permita dividir la red de clase B (al menos) en tres subredes.
-    + ¿Cuántos hosts puede haber por subred?
-    + ¿Cuál es la dirección de red y la dirección de broadcast de cada una de las 3 subredes creadas?
+    + Indica una máscara que permita dividir la red de clase B (al menos) en tres subredes. 
+    + ¿Cuántos hosts puede haber por subred? 62 Hosts x Subred
+    + ¿Cuál es la dirección de red y la dirección de broadcast de cada una de las 3 subredes creadas? 
+|  Subred | Dirección de subred | Primer host      | Último host      | Broadcast|
+|---------|---------------------|------------------|------------------|----------|
+| 1       | 150.32.0.0|  150.32.0.1 |  150.32.63.254   |150.32.63.255 |
+| 2       | 150.32.64.0|  150.32.64.1 |  150.32.127.254   |150.32.127.255 |
+| 3       | 150.32.128.0|  150.32.128.1 |  150.32.191.254   |150.32.191.255 |
+| 4       | 150.32.192.0|  150.32.192.1 |  150.32.255.254   |150.32.255.255 |
 
 19. Dada la dirección de clase B `120.32.0.0`, indica qué máscara de subred deberías escoger para tener 4 subredes. Rellena a continuación la siguiente tabla.
 Mascara: 255.255.192.0
