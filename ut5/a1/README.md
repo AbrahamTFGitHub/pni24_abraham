@@ -35,14 +35,14 @@ Enumeramos el material empleado tanto hardware como software y las conficuracion
 
 | Syntax                        |       Description         |
 | ----------------------------- | ------------------------- |
-| Direccion IPv4                |           faiosfjsf                |
+| Direccion IPv4                |                   tita        |
 | Mascara                       |                           |
 | Gateway                       |                           |
 | MAC                           |                           |
 | Fabricante                    |                           |
 | Paragraph                     |                           |
 | Header                        |                           |
-| Paragraph                     |                |
+| Paragraph                     |                           |
 
 
 En esta parte explicamos detalladamente los pasos que seguimos para realizar la práctica incluyendo capturas de pantalla y explicando que vemos en ellas. 
