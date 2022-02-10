@@ -213,6 +213,12 @@ enp0s3: flags=4163<UP,BROADCAST,RUNNING,MULTICAST> mtu 1500
 
 ![](img/route.png)
 
+
+<h2>Comando nslookup</h2>
+<h4>La diferencia esta que una usa la propia  dns de telefonica y la otra la de google para las consultas.</h4>
+
+![](img/nslookup.png)
+
 > ***IMPORTANTE:*** si estamos capturando una terminal no hace falta capturar todo el escritorio y es importante que se vea el nombre de usuario.
 
 
