@@ -225,12 +225,19 @@ enp0s3: flags=4163<UP,BROADCAST,RUNNING,MULTICAST> mtu 1500
 ![](img/route.png)
 
 <h2>Comando netstat</h2>
+
 1º  TCP/UDP 2º kb Recibido 3ºkb Recibido 4ºDireccoón origen 5ºDirección envio 6º Estado
+
 ![image](https://user-images.githubusercontent.com/90834831/153467592-eb4a06a5-2ee9-4264-ac96-7058d42bf94b.png)
+
 De varios paquetes tcp solo se han perdido 1 en donde diccen 1 TCPlossprobes.
+
 ![image](https://user-images.githubusercontent.com/90834831/153467478-3c8e0b8b-935a-4835-a5da-c311d814b337.png)
+
 Lo que puede ser ese asterisco son 2 cosas pueden que las conexiones puede originarse o venir que cualquier dirección remota.
+
 ![image](https://user-images.githubusercontent.com/90834831/153468037-eb9b27ac-b00e-495a-8125-d30fe54ca3b7.png)
+
 
 ESTABLISHED: La conexión ha sido establecida.
 CLOSE_WAIT: La conexión sigue abierta, pero el otro extremo nos comunica que no se continuará enviando información.
