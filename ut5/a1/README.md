@@ -196,7 +196,18 @@ enp0s3: flags=4163<UP,BROADCAST,RUNNING,MULTICAST> mtu 1500
         RX packets 4717 bytes 892450 (892.4 KB)
         RX errors @ dropped 180 overruns 0 frame 0
         TX packets 591 bytes 47919 (47.9 KB)
-        TX errors © dropped ® overruns © carrier ® collisions 0
+        TX errors © dropped ® overruns © carrier ® collisions
+root@abraham: /# ifconfig enp@s3 192.168.99.99 netmask 255.255.255.0
+root@abraham:/# ifconfig enp0s3
+enp0s3: flags=4163<UP,BROADCAST,RUNNING,MULTICAST> mtu 1500
+        inet 172.16.99.254 netmask 255.255.0.0 broadcast 172.16.255.255
+        inet6 fe80::fefb:43e2:af32:6ac2 prefixlen 64 scopeid 0x20<Link>
+        ether 08:00:27:65:62:1b txqueuelen 1000 (Ethernet)
+        RX packets 4717 bytes 892450 (892.4 KB)
+        RX errors @ dropped 180 overruns 0 frame 0
+        TX packets 591 bytes 47919 (47.9 KB)
+        TX errors © dropped ® overruns © carrier ® collisions
+        
 ~~~
 <h2>Ping en Windows y en Linux</h2>
 <h4>Ejercicios 1 y 2</h4>
@@ -213,15 +224,28 @@ enp0s3: flags=4163<UP,BROADCAST,RUNNING,MULTICAST> mtu 1500
 
 ![](img/route.png)
 
+<h2>Comando netstat</h2>
+1º  TCP/UDP 2º kb Recibido 3ºkb Recibido 4ºDireccoón origen 5ºDirección envio 6º Estado
+![image](https://user-images.githubusercontent.com/90834831/153467592-eb4a06a5-2ee9-4264-ac96-7058d42bf94b.png)
+De varios paquetes tcp solo se han perdido 1 en donde diccen 1 TCPlossprobes.
+![image](https://user-images.githubusercontent.com/90834831/153467478-3c8e0b8b-935a-4835-a5da-c311d814b337.png)
+Lo que puede ser ese asterisco son 2 cosas pueden que las conexiones puede originarse o venir que cualquier dirección remota.
+![image](https://user-images.githubusercontent.com/90834831/153468037-eb9b27ac-b00e-495a-8125-d30fe54ca3b7.png)
+
+ESTABLISHED: La conexión ha sido establecida.
+CLOSE_WAIT: La conexión sigue abierta, pero el otro extremo nos comunica que no se continuará enviando información.
+TIME_WAIT: La conexión ha sido cerrada, pero no se elimina de la tabla de conexión por si hay algo pendiente de recibir.
+
 
 <h2>Comando nslookup</h2>
 <h4>La diferencia esta que una usa la propia  dns de telefonica y la otra la de google para las consultas.</h4>
 
 ![](img/nslookup.png)
 
-> ***IMPORTANTE:*** si estamos capturando una terminal no hace falta capturar todo el escritorio y es importante que se vea el nombre de usuario.
+<h2>Comando arp</h2>
+No hay internet porque estamos poniendo una mac falsa.
 
-
-Si encontramos dificultades a la hora de realizar algún paso debemos explicar esas dificultades, que pasos hemos seguido para resolverla y los resultados obtenidos.
+![image](https://user-images.githubusercontent.com/90834831/153468199-c55bd57d-cc20-4148-95ad-6663ad946940.png)
 
 #### ***Conclusiones***. <a name="id5"></a>
+He aprendido a como configuramos y comprobamos red y sus comandos de comprobar una red en los sistemas operativos.
