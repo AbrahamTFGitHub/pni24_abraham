@@ -198,11 +198,20 @@ enp0s3: flags=4163<UP,BROADCAST,RUNNING,MULTICAST> mtu 1500
         TX packets 591 bytes 47919 (47.9 KB)
         TX errors © dropped ® overruns © carrier ® collisions 0
 ~~~
+<h2>Ping en Windows y en Linux</h2>
+<h4>Ejercicios 1 y 2</h4>
 
-![](img/001.png)
+![](img/003.png)
+![](img/002.png)
 
+<h4>Ejercicio3</h4>
+<h4>El tiempo de latencia es la cantidad de microsegundos que tarda en llegar un paquete por internet.</h4>
 
+![](img/004.png)
 
+<h2>Comando route Linux</h2>
+
+![](img/route.png)
 
 > ***IMPORTANTE:*** si estamos capturando una terminal no hace falta capturar todo el escritorio y es importante que se vea el nombre de usuario.
 
