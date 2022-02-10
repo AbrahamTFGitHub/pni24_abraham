@@ -20,15 +20,15 @@
 
 #### ***Introducción***. <a name="id1"></a>
 
-Aquí explicamos brevemente la parte teórica que tiene que ver con la práctica que se va a realizar
+ Los comandos de red sirven para comprobar el estado de una Red y su funcionamiento para hacer pruebas. 
 
 #### ***Objetivos***. <a name="id2"></a>
 
-Aquí explicamos los objetivos que se pretenden alcanzar al realizar la práctica.
+Aquí vamos a probar los distintos comandos de red importantes en los Sistemas Operativos de Windows y Linux mas usados.
 
 #### ***Material empleado***. <a name="id3"></a>
 
-Enumeramos el material empleado tanto hardware como software y las conficuraciones que hacemos (configuraciones de red por ejemplo) 
+Vamos a usar una maquina virtual de Windows y otra de Linux conectadas por modo puente.
 
 #### ***Desarrollo***. <a name="id4"></a>
 <h3>
@@ -37,9 +37,9 @@ Enumeramos el material empleado tanto hardware como software y las conficuracion
 
 | Sintaxis                      |       Descripcion         |
 | ----------------------------- | ------------------------- |
-| Direccion IPv4                |       172.18.99.180       |
-| Mascara                       |       255.255.0.0         |
-| Gateway                       |       172.18.0.1          |
+| Direccion IPv4                |       192.168.1.150      |
+| Mascara                       |       255.255.255.0         |
+| Gateway                       |       192.168.1.1          |
 | MAC                           |      08:00:27:84:c7:6e    |
 | Fabricante                    | Intel Pro/1000 MT Desktop |
 | Servidores DNS                |            Ninguno        |
@@ -199,7 +199,13 @@ enp0s3: flags=4163<UP,BROADCAST,RUNNING,MULTICAST> mtu 1500
         TX errors © dropped ® overruns © carrier ® collisions 0
 ~~~
 
+![](img/001.png)
+
+
+
+
 > ***IMPORTANTE:*** si estamos capturando una terminal no hace falta capturar todo el escritorio y es importante que se vea el nombre de usuario.
+
 
 Si encontramos dificultades a la hora de realizar algún paso debemos explicar esas dificultades, que pasos hemos seguido para resolverla y los resultados obtenidos.
 
