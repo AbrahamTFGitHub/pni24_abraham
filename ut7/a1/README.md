@@ -58,14 +58,14 @@ Para fines de revisión, esta práctica de laboratorio proporciona los comandos 
 
 **Nota**: las interfaces Gigabit Ethernet en los ISR Cisco 1941 cuentan con detección automática, y se puede** utilizar un cable directo de Ethernet entre el router y la PC-B. Si utiliza otro modelo de router Cisco, puede ser necesario usar un cable cruzado Ethernet.
 
-### Parte 1:  establecer la topología e inicializar los dispositivos.
+### 1º Parte: Establecer la topología e inicializar los dispositivos.
 
-### Paso 1.  realizar el cableado de red tal como se muestra en la topología.
+### 1. Realizar el cableado de red tal como se muestra en la topología.
 
 1. Conecte los dispositivos tal como se muestra en el diagrama de la topología y realice el cableado según sea necesario.  
 2. Encienda todos los dispositivos de la topología.  
 
-### Paso 2.  inicializar y volver a cargar el router y el switch.
+### 2.  inicializar y volver a cargar el router y el switch.
 
 **Nota**: en el apéndice A, se detallan los pasos para inicializar y volver a cargar los dispositivos.
 
@@ -128,17 +128,11 @@ Para el comando **exec-timeout**, ¿qué representan el **5** y el **0**?
 8. Asigne **ciscovtypass** como la contraseña de vty, establezca un tiempo de espera, habilite el inicio de sesión y agregue el comando **logging synchronous**.  
 
 R1(config)# **line vty 0 4**  
-
 R1(config-line)# **password ciscovtypass** 
-
 R1(config-line)#  **exec-timeout  5** **0** 
-
 R1(config-line)# **login**  
-
 R1(config-line)# **logging synchronous**  
-
 R1(config-line)# **exit** 
-
 R1(config)#  
 
 9. Cifre las contraseñas de texto no cifrado.  
@@ -171,7 +165,7 @@ R1(config-if)# **ip address 192.168.1.1 255.255.255.0**
 
 R1(config-if)# **no shutdown** 
 
-![](https://github.com/AbyssC1/pni26-alejandro/blob/main/Imagenes/UT7-A1/2configuracion%20de%20router.png)
+![]()
 
 12. Configure el reloj en el router, por ejemplo: 
 
@@ -252,7 +246,7 @@ En la parte 3, utilizará comandos **show** en una sesión SSH para recuperar in
 
 Mediante Tera Term en la PC-B, abra una sesión SSH para el R1 en la dirección IP 192.168.0.1 e inicie sesión como **admin** y use la contraseña **adminpass1**.
 
-![](https://github.com/AbyssC1/pni26-alejandro/blob/main/Imagenes/UT7-A1/5%205%20entrar%20al%20ssh.png)
+![]()
 
 ### Paso 2.  recuperar información importante del hardware y el software.
 
@@ -270,11 +264,11 @@ Mediante Tera Term en la PC-B, abra una sesión SSH para el R1 en la dirección 
 
 ``249856Kbytes``
 
-![](https://github.com/AbyssC1/pni26-alejandro/blob/main/Imagenes/UT7-A1/6%20toda%20configuracion1.png)
+![]()
 
-![](https://github.com/AbyssC1/pni26-alejandro/blob/main/Imagenes/UT7-A1/7%20toda%20configuracion2.png)
+![]()
 
-![](https://github.com/AbyssC1/pni26-alejandro/blob/main/Imagenes/UT7-A1/8%20toda%20configuracion3.png)
+![]()
 
 2. Con frecuencia, los comandos **show** proporcionan varias pantallas de resultados. Filtrar el resultado permite que un usuario visualice determinadas secciones del resultado. Para habilitar el comando de filtrado, introduzca una barra vertical (**|**) después de un comando **show**, seguido de un parámetro de filtrado y una expresión de filtrado. Para que el resultado coincida con la instrucción de filtrado, puede usar la palabra clave **include** para ver todas las líneas del resultado que contienen la expresión de filtrado. Filtre el comando **show version** mediante **show version | include register** para responder la siguiente pregunta.  
 
@@ -308,7 +302,7 @@ Use el comando **show ip route** en el router para responder las siguientes preg
 
 ``2``
 
-![](https://github.com/AbyssC1/pni26-alejandro/blob/main/Imagenes/UT7-A1/9%20show%20ip%20route.png)
+![]()
 
 ### Paso 5.  mostrar una lista de resumen de las interfaces del router.
 
@@ -318,7 +312,7 @@ Use el comando **show ip interface brief** en el router para responder la siguie
 
 ``no shutdown``
 
-![](https://github.com/AbyssC1/pni26-alejandro/blob/main/Imagenes/UT7-A1/10show%20ip%20brief.png)
+![]()
 
 ### Parte 4:  configurar IPv6 y verificar la conectividad
 
@@ -470,7 +464,7 @@ Delete  flash:/vlan.dat?
 [confirm] Switch# 
 
 
-![](https://github.com/AbyssC1/pni26-alejandro/blob/main/Imagenes/UT7-A1/2s1%20show%20flash.png)
+![]()
 
 6. Utilice el comando **erase startup-config** para eliminar el archivo de configuración de inicio de la NVRAM. Se le solicitará que confirme la eliminación del archivo de configuración. Presione Enter para confirmar que desea borrar este archivo. (Al pulsar cualquier otra tecla, se cancela la operación).  
 
@@ -490,7 +484,7 @@ Proceed with reload? [confirm]
 
 **Nota:** es posible que reciba un mensaje para guardar la configuración en ejecución antes de volver a** cargar el switch. Escriba **no** y presione Enter.
 
-![](https://github.com/AbyssC1/pni26-alejandro/blob/main/Imagenes/UT7-A1/1s%20erease%20y%20reload.png)
+![]()
 
 System configuration has been modified. Save? [yes/no]: 
 
