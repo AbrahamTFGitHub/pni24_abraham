@@ -376,3 +376,7 @@ C    192.168.1.0/24 is directly connected, FastEthernet0/0
 ~~~
 R1#copy running-config startup-config 
 ~~~
+![Proyecto 1](https://github.com/AbrahamTFGitHub/pni24_abraham/blob/main/ut9/Proyecto1.pkt)
+![Proyecto 2](https://github.com/AbrahamTFGitHub/pni24_abraham/blob/main/ut9/Proyecto2.pkt)
+![Proyecto 3](https://github.com/AbrahamTFGitHub/pni24_abraham/blob/main/ut9/Proyecto3.pkt)
+
