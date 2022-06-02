@@ -1,8 +1,5 @@
 ## Práctica de laboratorio: configuración de los parámetros básicos del router con la CLI del IOS
 
-### Topología 
-
-![](https://github.com/AbyssC1/pni26-alejandro/blob/main/Imagenes/UT7-A1/topologia.png)
 
 ### Tabla de direccionamiento
 
@@ -358,8 +355,6 @@ haga ping a la dirección IPv6 de unidifusión del R1 ``2001:db8:acad:a::1/641``
 ¿Tuvo éxito? 
 
 ``No``
-
-![](https://github.com/AbyssC1/pni26-alejandro/blob/main/Imagenes/UT7-A1/11%20configuracion%20ipv6.png)
 
 
 ### Reflexión
